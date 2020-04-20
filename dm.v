@@ -6,7 +6,7 @@
  * @return dout=>readData
 */
 
-module dm_4k(addr,din,we,clk,dout);
+module dm_4k(addr,we,clk,din,dout);
     input   [11:2]  addr;   
     input           we;     
     input           clk;    
@@ -17,7 +17,7 @@ module dm_4k(addr,din,we,clk,dout);
     reg   [31:0]   dm[1023:0];
     
     initial
-       $readmemh("data.txt",dm);  //打开文件
+       $readmemh("E:\\nuaacs\\ComputerOrganization\\data.txt",dm);  //打开文件
        
   
     always @(negedge clk)  //下降沿

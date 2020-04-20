@@ -12,7 +12,7 @@ module im_4k(addr,dout);
     reg   [31:0]   im[1023:0];
     
     initial
-       $readmemh("code.txt",im);
+       $readmemh("E:\\nuaacs\\ComputerOrganization\\code.txt",im);
      
     assign   dout = im[addr];
     

@@ -6,10 +6,10 @@
  * @return <<instruction 
 */
 
-module (
+module sl2(data,slData);
     input  [31:0]  data;//输入数据
     output [31:0]  slData;//输出左移两位后的数据
-);
+
 
     wire  [31:0] slData;
     assign  slData = {data[29:0],2'b00};
