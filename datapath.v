@@ -145,15 +145,15 @@ module datapath(clk,rst,regDst,jump,branch,memRead,memToReg,aluOp,memWrite,aluSr
     signext Signext(ID_instruction[15:0],extType,signExtNumber);
 
 //加入ID_EX寄存器
-    wire [14:0] ctrl_result;
-    mux2_15 Mux_2_15_1({regDst,jump,branch,memRead,memToReg,aluOp,
-    memWrite,aluSrc,regWrite},15'b0,stall_info,ctrl_result);
+    wire [11:0] ctrl_result;
+    mux2_11 Mux_2_11_1({regDst,memRead,memToReg,aluOp,
+    memWrite,aluSrc,regWrite},11'b0,stall_info,ctrl_result);
     //ctrl_result 是控制器前面的选择器的输出
 
-    id_ex Id_ex(clk,rst,ID_fourPC,ctrl_result[14:13],ctrl_result[12:11],ctrl_result[10:9],ctrl_result[8],ctrl_result[7:6],
+    id_ex Id_ex(clk,rst,ID_fourPC,ctrl_result[10:9],ctrl_result[8],ctrl_result[7:6],
     ctrl_result[5:3],ctrl_result[2],ctrl_result[1],ctrl_result[0],readData1,readData2,ID_instruction[20:16],
     ID_instruction[15:11],signExtNumber,ID_instruction,
-    EX_regDst,EX_jump,EX_branch,EX_memRead,
+    EX_regDst,EX_memRead,
     EX_memToReg,EX_aluOp,EX_aluSrc,EX_regWrite,EX_memWrite,EX_readData1,EX_readData2,
     EX_extNumber,EX_instruction1,EX_instruction2,EX_fourPC,EX_instruction);
 
@@ -187,9 +187,9 @@ module datapath(clk,rst,regDst,jump,branch,memRead,memToReg,aluOp,memWrite,aluSr
 
 
 //加入EX_MEM寄存器
-    ex_mem Ex_mem(clk,rst,EX_fourPC,EX_jump,EX_branch,EX_memRead,EX_memToReg,
+    ex_mem Ex_mem(clk,rst,EX_fourPC,EX_memRead,EX_memToReg,
     EX_memWrite,EX_regWrite,zero,aluResult,mux_data,
-    writeRegister,EX_instruction,MEM_jump,MEM_branch,MEM_memRead,MEM_memToReg,MEM_memWrite,MEM_regWrite,//往后传输的数据
+    writeRegister,EX_instruction,MEM_memRead,MEM_memToReg,MEM_memWrite,MEM_regWrite,//往后传输的数据
     MEM_zero,MEM_aluResult,MEM_readData2,MEM_writeDataReg,MEM_fourPC,MEM_instruction);
 
 /*  dm
@@ -203,8 +203,8 @@ module datapath(clk,rst,regDst,jump,branch,memRead,memToReg,aluOp,memWrite,aluSr
     dm_4k Dm(MEM_aluResult[11:2],MEM_memWrite,clk,MEM_readData2,dout);
 
 //加入MEM_WB寄存器
-    mem_wb Mem_wb(clk,rst,MEM_fourPC,MEM_jump,MEM_memToReg,dout,MEM_aluResult,
-    MEM_writeDataReg,MEM_regWrite,MEM_instruction,WB_jump,WB_memToReg,//往后传输的数据
+    mem_wb Mem_wb(clk,rst,MEM_fourPC,MEM_memToReg,dout,MEM_aluResult,
+    MEM_writeDataReg,MEM_regWrite,MEM_instruction,WB_memToReg,//往后传输的数据
     WB_readData,WB_aluResult,WB_writeDataReg,WB_regWrite,WB_fourPC,WB_instruction);
 
     mux3_32 Mux2_32_2(WB_readData,WB_aluResult,{WB_fourPC,2'b00},WB_memToReg,writeData); //dm后面那个mux

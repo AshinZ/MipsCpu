@@ -18,13 +18,13 @@ module mux2_32(a,b,sel,y);//2 input 32-bit mux
        else y <= b ;
 endmodule
 
-module mux2_15(a,b,sel,y);//2 input 17-bit mux
-    input   [14:0]   a ;
-    input   [14:0]   b ;
+module mux2_11(a,b,sel,y);//2 input 17-bit mux
+    input   [10:0]   a ;
+    input   [10:0]   b ;
     input            sel ;
-    output  [14:0]   y;
+    output  [10:0]   y;
     
-    reg   [14:0]   y;
+    reg   [10:0]   y;
     
     always @(*)
        if (sel == 0)
