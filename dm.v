@@ -20,7 +20,7 @@ module dm_4k(addr,we,clk,din,dout);
        $readmemh("E:\\nuaacs\\ComputerOrganization\\data.txt",dm);  //打开文件
        
   
-    always @(negedge clk)  //下降沿
+    always @(posedge clk)  //下降沿
        if (we)             //写信号为真
           dm[addr] <= din; //写入数据
           

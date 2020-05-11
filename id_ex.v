@@ -7,9 +7,10 @@
 module id_ex(clk,rst,fourPC,//传时钟和pc+4
 regDst,jump,branch,memRead,memToReg,aluOp,memWrite,aluSrc,regWrite,//控制器输入
 readData1,readData2,instruction1,instruction2,extNumber, //regfile和拓展其输入
+instruction,
 out_regDst,out_jump,out_branch,out_memRead,out_memToReg,out_aluOp,out_aluSrc,out_regWrite,
 out_memWrite,out_readData1,out_readData2,
-out_extNumber,out_instruction1,out_instruction2,out_fourPC);
+out_extNumber,out_instruction1,out_instruction2,out_fourPC,out_instruction);
 
     input           clk;
     input           rst;
@@ -25,9 +26,10 @@ out_extNumber,out_instruction1,out_instruction2,out_fourPC);
     input           regWrite;
     input  [31:0]   readData1;
     input  [31:0]   readData2;
-    input  [5:0]    instruction1;
-    input  [5:0]    instruction2;
+    input  [4:0]    instruction1;
+    input  [4:0]    instruction2;
     input  [31:0]   extNumber;
+    input  [31:0]   instruction;
 
     output reg [31:2]   out_fourPC;
     output reg [1:0]    out_regDst;
@@ -41,9 +43,10 @@ out_extNumber,out_instruction1,out_instruction2,out_fourPC);
     output reg          out_regWrite;
     output reg [31:0]   out_readData1;
     output reg [31:0]   out_readData2;
-    output reg [5:0]    out_instruction1;
-    output reg [5:0]    out_instruction2;
+    output reg [4:0]    out_instruction1;
+    output reg [4:0]    out_instruction2;
     output reg [31:0]   out_extNumber;
+    output reg [31:0]   out_instruction;
 
     always @(posedge clk)
         begin
@@ -59,6 +62,7 @@ out_extNumber,out_instruction1,out_instruction2,out_fourPC);
             out_regWrite <= regWrite;
             out_readData1 <= readData1;
             out_readData2 <= readData2;
+            out_instruction <= instruction;
             out_instruction1 <= instruction1;
             out_instruction2 <= instruction2;
             out_extNumber <= extNumber;

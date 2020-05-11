@@ -18,6 +18,20 @@ module mux2_32(a,b,sel,y);//2 input 32-bit mux
        else y <= b ;
 endmodule
 
+module mux2_15(a,b,sel,y);//2 input 17-bit mux
+    input   [14:0]   a ;
+    input   [14:0]   b ;
+    input            sel ;
+    output  [14:0]   y;
+    
+    reg   [14:0]   y;
+    
+    always @(*)
+       if (sel == 0)
+          y <= a ;
+       else y <= b ;
+endmodule
+
 module mux2_30(a,b,sel,y);//2 input 30-bit mux
     input   [31:2]   a ;
     input   [31:2]   b ;
@@ -28,6 +42,20 @@ module mux2_30(a,b,sel,y);//2 input 30-bit mux
     
     always @(*)
        if (sel == 0)
+          y <= a ;
+       else y <= b ;
+endmodule
+
+module mux2_5(a,b,sel,y);//2 input 30-bit mux
+    input   [4:0]   a ;
+    input   [4:0]   b ;
+    input   [5:0]   sel ;
+    output  [4:0]   y;
+    
+    reg   [4:0]   y;
+    
+    always @(*)
+       if (sel == 6'b0)
           y <= a ;
        else y <= b ;
 endmodule

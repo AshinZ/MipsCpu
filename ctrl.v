@@ -34,6 +34,7 @@ module control(opcode,funct,regDst,jump,branch,memRead,memToReg,aluOp,memWrite,a
         case (opcode)
             6'b000000://如果是R指令
                 case ( funct )
+                    6'b000000: controlInfo <= 17'b00_00_00_0_00_000_0_0_0_00;
                     6'b100000: controlInfo <= 17'b01_00_00_0_01_000_0_0_1_00;//add
       //              6'b100001://addu
                     6'b100010: controlInfo <= 17'b01_00_00_0_01_001_0_0_1_00;//sub
