@@ -35,6 +35,8 @@ module regfile(readRegister1,readRegister2,writeRegister,writeData,regWrite,clk,
  //   always @(negedge clk) begin
     assign readData1 = (readRegister1 != 5'b00000) ? registers[readRegister1] : 32'b0 ;
     assign readData2 = (readRegister2 != 5'b00000) ? registers[readRegister2] : 32'b0 ;
+ //   assign readData1 = (regWrite&&(readRegister1 != writeRegister)) ? ((readRegister1 != 5'b00000) ? registers[readRegister1] : 32'b0 ): writeData;
+ //   assign readData2 = (regWrite&&(readRegister2 != writeRegister)) ? ((readRegister2 != 5'b00000) ? registers[readRegister2] : 32'b0 ) :writeData ;
   //  end
      //如果rs rt不为空 我们就设置readData 为0的时候一般是j指令
 endmodule 
