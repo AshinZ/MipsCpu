@@ -8,15 +8,15 @@ module if_id(clk,rst,fourPC,instruction,IF_ID_write,out_fourPC,out_instruction);
 
     input          clk;
     input          rst;
-    input  [31:2]  fourPC;
+    input  [31:0]  fourPC;
     input  [31:0]  instruction;
     input          IF_ID_write; 
 
-    output [31:2]  out_fourPC;
+    output [31:0]  out_fourPC;
     output [31:0]  out_instruction;
 
     reg [31:0]   out_instruction;
-    reg [31:2]   out_fourPC;
+    reg [31:0]   out_fourPC;
 
     always @(posedge clk)
         begin 

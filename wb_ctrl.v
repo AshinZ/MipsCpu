@@ -5,11 +5,16 @@
  * @time   2020-5-27
 */
 
-module wb_ctrl(inst_name,jump,branch,regDst,extType);
+module wb_ctrl(inst_name,memToReg,regwrite,HI_read,HI_write,LO_read,LO_write);
     input [7:0] inst_name;
 
-    output wire [3:0]   aluOp  ;
-    output wire         aluSrc ; 
+    output wire [1:0]   memToReg;
+    // 2'b00 memdata  2'b01 hi lo寄存器  2‘b10 pc  2'b11 CP0寄存器
+    output wire         regwrite;
+    output wire         HI_read ;
+    output wire         HI_write;
+    output wire         LO_read;
+    output wire         LO_write; 
 
     `include "decode_list.v"
 

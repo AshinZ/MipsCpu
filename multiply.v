@@ -15,11 +15,11 @@ module multiply (mult,div,data1,data2,out_data1,out_data2);
 
     wire  [63:0]  temp   result;
     assign    temp = data1 * data2;
-    assign    out_data1 = (mult) ? temp[63:32]: 
-                          (div)  ?  data1 / data2 :
-                          32'b0;
-    assign    out_data2 = (mult) ? temp[31:0]: 
+    assign    out_data1 = (mult) ? temp[63:32]:   //lo寄存器
                           (div)  ?  data1 % data2 :
+                          32'b0;
+    assign    out_data2 = (mult) ? temp[31:0]:    //hi寄存器
+                          (div)  ?  data1 / data2 :
                           32'b0;
 
 endmodule

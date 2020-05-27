@@ -5,11 +5,13 @@
  * @time   2020-5-27
 */
 
-module mem_ctrl(inst_name,jump,branch,regDst,extType);
+module mem_ctrl(inst_name,memRead,memWrite,readDataSelect,writeDataSelect);
     input [7:0] inst_name;
 
-    output wire [3:0]   aluOp  ;
-    output wire         aluSrc ; 
+    output wire         memRead;
+    output wire         memWrite ;
+    output wire  [1:0]  readDataSelect;
+    output wire  [1:0]  writeDataSelect; 
 
     `include "decode_list.v"
 

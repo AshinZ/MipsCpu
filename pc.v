@@ -7,15 +7,15 @@
 */
 
 module pc(NPC,clk,rst,PC_write,PC);
-    input [31:2]   NPC;
+    input [31:0]   NPC;
     input          clk;
     input          rst;
     input          PC_write;
-    output [31:2]  PC;
+    output [31:0]  PC;
 
     
-    reg [31:2] PC;
-    reg [31:2] last_PC;
+    reg [31:0] PC;
+    reg [31:0] last_PC;
     always @(posedge clk or posedge rst) begin
         last_PC <= PC ;
         if (rst) begin  //清零 那么pc地址回到30'h0c00

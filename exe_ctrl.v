@@ -9,7 +9,8 @@ module exe_ctrl(inst_name,jump,branch,regDst,extType);
     input [7:0] inst_name;
 
     output wire [3:0]   aluOp  ;
-    output wire         aluSrc ; 
+    output wire         multiply;
+    output wire         div;
 
     `include "decode_list.v"
 
