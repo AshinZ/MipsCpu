@@ -1,0 +1,236 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May 29 11:42:38 2020
+# Process ID: 19484
+# Current directory: C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17660 C:\Users\ASUS\Desktop\2020\func_test_v0.01\soc_sram_func\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/vivado.log
+# Journal file: C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Mem_wb/out_writeDataReg}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Decode_ctrl/regDst}} 
+save_wave_config {C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+run all
+run all
+run all
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Mux_4_32_1/a}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Mux_2_32_1}} 
+save_wave_config {C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/data_sram_en}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/data_sram_wen}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/data_sram_addr}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/data_sram_wdata}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/inst_sram_rdata}} 
+save_wave_config {C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Forwarding_unit_branch/Forward_Rs}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Forwarding_unit_branch/IF_ID_Rs}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Forwarding_unit_branch/IF_ID_Rt}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Forwarding_unit_branch/EX_MEM_Rd}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Forwarding_unit_branch/EX_MEM_regWrite}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Forwarding_unit_branch/ID_EX_Rd}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Forwarding_unit_branch/ID_EX_regWrite}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Forwarding_unit_branch/Forward_Rs}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Forwarding_unit_branch/Forward_Rt}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Npc/compare_data1}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Npc/beq_target}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Npc/branch}} 
+save_wave_config {C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/LO_regfile/HILO_write}} 
+save_wave_config {C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/MEM_Wb_ctrl/HI_read}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/MEM_Wb_ctrl/inst_name}} 
+save_wave_config {C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Mux_4_32_1/y}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Mux_4_32_1/sel}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Mux_4_32_1/b}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/MUX_2_32_2/a}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/MUX_2_32_2/b}} 
+save_wave_config {C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/LO_regfile/HILO_write}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/HI_regfile/HILO_write}} 
+save_wave_config {C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/HI_regfile/HILO_write}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/HI_regfile/HILO_input}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/LO_regfile/HILO_input}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/HI_regfile/HILO_info}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/LO_regfile/HILO_info}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Multiply/div}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Multiply/data1}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Multiply/data2}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Multiply/out_data1}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Multiply/out_data2}} 
+save_wave_config {C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Multiply/unsign}} 
+save_wave_config {C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Multiply/temp}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Multiply/A}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/soc_lite/cpu/Multiply/B}} 
+create_ip -name mult_gen -vendor xilinx.com -library ip -version 12.0 -module_name mult_gen_0 -dir c:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.srcs/sources_1/ip
+set_property -dict [list CONFIG.MultType {Parallel_Multiplier} CONFIG.PortAType {Unsigned} CONFIG.PortAWidth {32} CONFIG.PortBType {Unsigned} CONFIG.PortBWidth {32} CONFIG.OutputWidthHigh {63}] [get_ips mult_gen_0]
+generate_target {instantiation_template} [get_files c:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci]
+export_ip_user_files -of_objects [get_files c:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci]
+launch_runs -jobs 4 mult_gen_0_synth_1
+save_wave_config {C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim

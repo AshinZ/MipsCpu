@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 28 11:27:45 2020
+# Process ID: 25668
+# Current directory: C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.runs/data_ram_synth_1
+# Command line: vivado.exe -log data_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source data_ram.tcl
+# Log file: C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.runs/data_ram_synth_1/data_ram.vds
+# Journal file: C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.runs/data_ram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source data_ram.tcl -notrace

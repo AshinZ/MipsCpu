@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May 29 14:22:20 2020
+# Process ID: 26188
+# Current directory: C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace

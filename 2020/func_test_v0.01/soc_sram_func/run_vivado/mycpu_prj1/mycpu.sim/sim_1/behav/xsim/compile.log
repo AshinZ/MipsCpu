@@ -1,0 +1,70 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/sim/inst_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/CP0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/HILO_regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HILO_regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/BRIDGE/bridge_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2458] undeclared symbol conf_we, assumed default net type wire [C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/CONFREG/confreg.v:160]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mycpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/decode_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/ex_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/exception.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exception_det
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/exception.v:161]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/exe_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwarding_unit_alu
+INFO: [VRFC 10-311] analyzing module forwarding_unit_branch
+INFO: [VRFC 10-311] analyzing module forwarding_unit_mfto_branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/hazard_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_detection
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/id_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/if_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/mem_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/mem_wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/multiply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiply
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_32
+INFO: [VRFC 10-311] analyzing module mux2_11
+INFO: [VRFC 10-311] analyzing module mux2_30
+INFO: [VRFC 10-311] analyzing module mux2_5
+INFO: [VRFC 10-311] analyzing module mux3_5
+INFO: [VRFC 10-311] analyzing module mux3_32
+INFO: [VRFC 10-311] analyzing module mux4_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/npc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module npc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/soc_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/rtl/myCPU/wb_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/2020/func_test_v0.01/soc_sram_func/testbench/mycpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
